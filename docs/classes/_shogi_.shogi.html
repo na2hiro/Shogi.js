@@ -1,0 +1,1206 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shogi | shogi.js</title>
+	<meta name="description" content="Documentation for shogi.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">shogi.js</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_shogi_.html">&quot;shogi&quot;</a>
+				</li>
+				<li>
+					<a href="_shogi_.shogi.html">Shogi</a>
+				</li>
+			</ul>
+			<h1>Class Shogi</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>将棋盤を管理するクラス</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Shogi</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_shogi_.shogi.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_shogi_.shogi.html#board" class="tsd-kind-icon">board</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_shogi_.shogi.html#flageditmode" class="tsd-kind-icon">flag<wbr>Edit<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_shogi_.shogi.html#hands" class="tsd-kind-icon">hands</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_shogi_.shogi.html#turn" class="tsd-kind-icon">turn</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#capture" class="tsd-kind-icon">capture</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#capturebycolor" class="tsd-kind-icon">capture<wbr>ByColor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#checkturn" class="tsd-kind-icon">check<wbr>Turn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#drop" class="tsd-kind-icon">drop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#editmode" class="tsd-kind-icon">edit<wbr>Mode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#flip" class="tsd-kind-icon">flip</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#get" class="tsd-kind-icon">get</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#getdropsby" class="tsd-kind-icon">get<wbr>Drops<wbr>By</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#gethandssummary" class="tsd-kind-icon">get<wbr>Hands<wbr>Summary</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#getmovesfrom" class="tsd-kind-icon">get<wbr>Moves<wbr>From</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#getmovesto" class="tsd-kind-icon">get<wbr>Moves<wbr>To</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#initialize" class="tsd-kind-icon">initialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#initializefromsfenstring" class="tsd-kind-icon">initialize<wbr>FromSFENString</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#move" class="tsd-kind-icon">move</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#nextturn" class="tsd-kind-icon">next<wbr>Turn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#popfromhand" class="tsd-kind-icon">pop<wbr>From<wbr>Hand</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#prevturn" class="tsd-kind-icon">prev<wbr>Turn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#pushtohand" class="tsd-kind-icon">push<wbr>ToHand</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_shogi_.shogi.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#setturn" class="tsd-kind-icon">set<wbr>Turn</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#tocsastring" class="tsd-kind-icon">toCSAString</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#tosfenstring" class="tsd-kind-icon">toSFENString</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#undrop" class="tsd-kind-icon">undrop</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_shogi_.shogi.html#unmove" class="tsd-kind-icon">unmove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_shogi_.shogi.html#getillegalunpromotedrow" class="tsd-kind-icon">get<wbr>Illegal<wbr>Unpromoted<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_shogi_.shogi.html#getrowtooppositeend" class="tsd-kind-icon">get<wbr>Row<wbr>ToOpposite<wbr>End</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Shogi<span class="tsd-signature-symbol">(</span>setting<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_shogi_.isettingtype.html" class="tsd-signature-type">ISettingType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_shogi_.shogi.html" class="tsd-signature-type">Shogi</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L52">shogi.ts:52</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> setting: <a href="../interfaces/_shogi_.isettingtype.html" class="tsd-signature-type">ISettingType</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_shogi_.shogi.html" class="tsd-signature-type">Shogi</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="board" class="tsd-anchor"></a>
+					<h3>board</h3>
+					<div class="tsd-signature tsd-kind-icon">board<span class="tsd-signature-symbol">:</span> <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L40">shogi.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>盤面</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="flageditmode" class="tsd-anchor"></a>
+					<h3>flag<wbr>Edit<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">flag<wbr>Edit<wbr>Mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L52">shogi.ts:52</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>編集モードかどうか</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="hands" class="tsd-anchor"></a>
+					<h3>hands</h3>
+					<div class="tsd-signature tsd-kind-icon">hands<span class="tsd-signature-symbol">:</span> <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L44">shogi.ts:44</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>持ち駒</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="turn" class="tsd-anchor"></a>
+					<h3>turn</h3>
+					<div class="tsd-signature tsd-kind-icon">turn<span class="tsd-signature-symbol">:</span> <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L48">shogi.ts:48</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>次の手番</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="capture" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> capture</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">capture<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L395">shogi.ts:395</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)の駒を取って反対側の持ち駒に加える</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="capturebycolor" class="tsd-anchor"></a>
+					<h3>capture<wbr>ByColor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">capture<wbr>ByColor<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L337">shogi.ts:337</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)の駒を取ってcolorの持ち駒に加える</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="checkturn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Turn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Turn<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L449">shogi.ts:449</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>colorの手番で問題ないか確認する．編集モードならok．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="drop" class="tsd-anchor"></a>
+					<h3>drop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">drop<span class="tsd-signature-symbol">(</span>tox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, color<span class="tsd-signature-symbol">?: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L167">shogi.ts:167</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(tox, toy)へcolorの持ち駒のkindを打つ．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tox: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>kind: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol"> = this.turn</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="editmode" class="tsd-anchor"></a>
+					<h3>edit<wbr>Mode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Mode<span class="tsd-signature-symbol">(</span>flag<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L96">shogi.ts:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>編集モード切り替え</p>
+									<ul>
+										<li>通常モード：移動時に手番と移動可能かどうかチェックし，移動可能範囲は手番側のみ返す．</li>
+										<li>編集モード：移動時に手番や移動可能かはチェックせず，移動可能範囲は両者とも返す．</li>
+									</ul>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>flag: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="flip" class="tsd-anchor"></a>
+					<h3>flip</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">flip<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L354">shogi.ts:354</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)の駒をフリップする(先手→先手成→後手→後手成→)
+									成功したらtrueを返す</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get" class="tsd-anchor"></a>
+					<h3>get</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L309">shogi.ts:309</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)の駒を得る</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdropsby" class="tsd-anchor"></a>
+					<h3>get<wbr>Drops<wbr>By</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Drops<wbr>By<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L248">shogi.ts:248</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>colorが打てる動きを全て得る</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="gethandssummary" class="tsd-anchor"></a>
+					<h3>get<wbr>Hands<wbr>Summary</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hands<wbr>Summary<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L316">shogi.ts:316</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>keyを種類，valueを枚数とするオブジェクトとして持ち駒の枚数一覧を返す．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-index-signature">
+									<h5><span class="tsd-signature-symbol">[</span>index: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmovesfrom" class="tsd-anchor"></a>
+					<h3>get<wbr>Moves<wbr>From</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Moves<wbr>From<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L200">shogi.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)の駒の移動可能な動きをすべて得る
+									盤外，自分の駒取りは除外．二歩，王手放置などはチェックせず．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getmovesto" class="tsd-anchor"></a>
+					<h3>get<wbr>Moves<wbr>To</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Moves<wbr>To<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, color<span class="tsd-signature-symbol">?: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L288">shogi.ts:288</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)に行けるcolor側のkindの駒の動きを得る</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>kind: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol"> = this.turn</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/_shogi_.imove.html" class="tsd-signature-type">IMove</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initialize" class="tsd-anchor"></a>
+					<h3>initialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<span class="tsd-signature-symbol">(</span>setting<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_shogi_.isettingtype.html" class="tsd-signature-type">ISettingType</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L61">shogi.ts:61</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>盤面を初期化する</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> setting: <a href="../interfaces/_shogi_.isettingtype.html" class="tsd-signature-type">ISettingType</a><span class="tsd-signature-symbol"> = {preset: &quot;HIRATE&quot;}</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>初期局面(なければ平手)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializefromsfenstring" class="tsd-anchor"></a>
+					<h3>initialize<wbr>FromSFENString</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>FromSFENString<span class="tsd-signature-symbol">(</span>sfen<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L70">shogi.ts:70</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SFENによる盤面表現の文字列で盤面を初期化する</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sfen: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="move" class="tsd-anchor"></a>
+					<h3>move</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">move<span class="tsd-signature-symbol">(</span>fromx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fromy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, promote<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L103">shogi.ts:103</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(fromx, fromy)から(tox, toy)へ移動し，promoteなら成り，駒を取っていれば持ち駒に加える．．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromx: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>fromy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>tox: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> promote: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="nextturn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> next<wbr>Turn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">next<wbr>Turn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L429">shogi.ts:429</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>次の手番に行く</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="popfromhand" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pop<wbr>From<wbr>Hand</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">pop<wbr>From<wbr>Hand<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L413">shogi.ts:413</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>color側のkindの駒を取って返す</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="prevturn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> prev<wbr>Turn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">prev<wbr>Turn<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L439">shogi.ts:439</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>前の手番に行く</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="pushtohand" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> push<wbr>ToHand</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">push<wbr>ToHand<span class="tsd-signature-symbol">(</span>piece<span class="tsd-signature-symbol">: </span><a href="_piece_.piece.html" class="tsd-signature-type">Piece</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L406">shogi.ts:406</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>駒pieceを持ち駒に加える</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>piece: <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="set" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, piece<span class="tsd-signature-symbol">: </span><a href="_piece_.piece.html" class="tsd-signature-type">Piece</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L388">shogi.ts:388</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>(x, y)に駒を置く</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>piece: <a href="_piece_.piece.html" class="tsd-signature-type">Piece</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setturn" class="tsd-anchor"></a>
+					<h3>set<wbr>Turn</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Turn<span class="tsd-signature-symbol">(</span>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L376">shogi.ts:376</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>手番を設定する</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tocsastring" class="tsd-anchor"></a>
+					<h3>toCSAString</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toCSAString<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L78">shogi.ts:78</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>CSAによる盤面表現の文字列を返す</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tosfenstring" class="tsd-anchor"></a>
+					<h3>toSFENString</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toSFENString<span class="tsd-signature-symbol">(</span>moveCount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L87">shogi.ts:87</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>SFENによる盤面表現の文字列を返す</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> moveCount: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="undrop" class="tsd-anchor"></a>
+					<h3>undrop</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">undrop<span class="tsd-signature-symbol">(</span>tox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L185">shogi.ts:185</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>dropの逆を行う，つまり(tox, toy)の駒を駒台に戻す．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>tox: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unmove" class="tsd-anchor"></a>
+					<h3>unmove</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">unmove<span class="tsd-signature-symbol">(</span>fromx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fromy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, tox<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, promote<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, capture<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L132">shogi.ts:132</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>moveの逆を行う．つまり(tox, toy)から(fromx, fromy)へ移動し，駒を取っていたら戻し，promoteなら成りを戻す．</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromx: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>fromy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>tox: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> promote: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> capture: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getillegalunpromotedrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Illegal<wbr>Unpromoted<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Illegal<wbr>Unpromoted<wbr>Row<span class="tsd-signature-symbol">(</span>kind<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L18">shogi.ts:18</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>kind: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">2</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getrowtooppositeend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Row<wbr>ToOpposite<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>ToOpposite<wbr>End<span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L33">shogi.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>手番の相手側から数えた段数</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>color: <a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_color_.html">&quot;<wbr>Color&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_constants_.html">&quot;<wbr>Constants&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_imovedefinition_.html">&quot;IMove<wbr>Definition&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_piece_.html">&quot;<wbr>Piece&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/_serialization_.html">&quot;<wbr>Serialization&quot;</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/_shogi_.html">&quot;shogi&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="_shogi_.shogi.html" class="tsd-kind-icon">Shogi</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#board" class="tsd-kind-icon">board</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#flageditmode" class="tsd-kind-icon">flag<wbr>Edit<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#hands" class="tsd-kind-icon">hands</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#turn" class="tsd-kind-icon">turn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#capture" class="tsd-kind-icon">capture</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#capturebycolor" class="tsd-kind-icon">capture<wbr>ByColor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#checkturn" class="tsd-kind-icon">check<wbr>Turn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#drop" class="tsd-kind-icon">drop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#editmode" class="tsd-kind-icon">edit<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#flip" class="tsd-kind-icon">flip</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#get" class="tsd-kind-icon">get</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#getdropsby" class="tsd-kind-icon">get<wbr>Drops<wbr>By</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#gethandssummary" class="tsd-kind-icon">get<wbr>Hands<wbr>Summary</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#getmovesfrom" class="tsd-kind-icon">get<wbr>Moves<wbr>From</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#getmovesto" class="tsd-kind-icon">get<wbr>Moves<wbr>To</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#initialize" class="tsd-kind-icon">initialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#initializefromsfenstring" class="tsd-kind-icon">initialize<wbr>FromSFENString</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#move" class="tsd-kind-icon">move</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#nextturn" class="tsd-kind-icon">next<wbr>Turn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#popfromhand" class="tsd-kind-icon">pop<wbr>From<wbr>Hand</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#prevturn" class="tsd-kind-icon">prev<wbr>Turn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#pushtohand" class="tsd-kind-icon">push<wbr>ToHand</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_shogi_.shogi.html#set" class="tsd-kind-icon">set</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#setturn" class="tsd-kind-icon">set<wbr>Turn</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#tocsastring" class="tsd-kind-icon">toCSAString</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#tosfenstring" class="tsd-kind-icon">toSFENString</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#undrop" class="tsd-kind-icon">undrop</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_shogi_.shogi.html#unmove" class="tsd-kind-icon">unmove</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_shogi_.shogi.html#getillegalunpromotedrow" class="tsd-kind-icon">get<wbr>Illegal<wbr>Unpromoted<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_shogi_.shogi.html#getrowtooppositeend" class="tsd-kind-icon">get<wbr>Row<wbr>ToOpposite<wbr>End</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_shogi_.imove.html" class="tsd-kind-icon">IMove</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/_shogi_.isettingtype.html" class="tsd-kind-icon">ISetting<wbr>Type</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
