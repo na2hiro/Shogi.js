@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for shogi.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,13 +52,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">shogi.js</a>
 				</li>
 				<li>
-					<a href="../modules/_shogi_.html">&quot;shogi&quot;</a>
-				</li>
-				<li>
-					<a href="_shogi_.isettingtype.html">ISettingType</a>
+					<a href="isettingtype.html">ISettingType</a>
 				</li>
 			</ul>
 			<h1>Interface ISettingType</h1>
@@ -84,8 +80,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shogi_.isettingtype.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_shogi_.isettingtype.html#preset" class="tsd-kind-icon">preset</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="isettingtype.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="isettingtype.html#preset" class="tsd-kind-icon">preset</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,20 +92,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="data" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>board<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>color<span class="tsd-signature-symbol">?: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>hands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>board<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>color<span class="tsd-signature-symbol">?: </span><a href="../enums/color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>color<span class="tsd-signature-symbol">: </span><a href="../enums/color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>hands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L458">shogi.ts:458</a></li>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/5d08c74/src/shogi.ts#L458">shogi.ts:458</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>board<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>color<span class="tsd-signature-symbol">?: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>board<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>color<span class="tsd-signature-symbol">?: </span><a href="../enums/color.html" class="tsd-signature-type">Color</a><span class="tsd-signature-symbol">; </span>kind<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>color<span class="tsd-signature-symbol">: </span><a href="../enums/_color_.color.html" class="tsd-signature-type">Color</a></h5>
+								<h5>color<span class="tsd-signature-symbol">: </span><a href="../enums/color.html" class="tsd-signature-type">Color</a></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5>hands<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -123,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">preset<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/c3646c7/src/shogi.ts#L457">shogi.ts:457</a></li>
+							<li>Defined in <a href="https://github.com/na2hiro/Shogi.js/blob/5d08c74/src/shogi.ts#L457">shogi.ts:457</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,47 +128,38 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_color_.html">&quot;<wbr>Color&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_constants_.html">&quot;<wbr>Constants&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_imovedefinition_.html">&quot;IMove<wbr>Definition&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_piece_.html">&quot;<wbr>Piece&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/_serialization_.html">&quot;<wbr>Serialization&quot;</a>
-					</li>
-					<li class="current tsd-kind-module">
-						<a href="../modules/_shogi_.html">&quot;shogi&quot;</a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/_shogi_.shogi.html" class="tsd-kind-icon">Shogi</a>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/color.html" class="tsd-kind-icon">Color</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module">
-						<a href="_shogi_.imove.html" class="tsd-kind-icon">IMove</a>
+					<li class=" tsd-kind-class">
+						<a href="../classes/piece.html" class="tsd-kind-icon">Piece</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/shogi.html" class="tsd-kind-icon">Shogi</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="imove.html" class="tsd-kind-icon">IMove</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="imovedefinition.html" class="tsd-kind-icon">IMove<wbr>Definition</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="_shogi_.isettingtype.html" class="tsd-kind-icon">ISetting<wbr>Type</a>
+					<li class="current tsd-kind-interface">
+						<a href="isettingtype.html" class="tsd-kind-icon">ISetting<wbr>Type</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shogi_.isettingtype.html#data" class="tsd-kind-icon">data</a>
+								<a href="isettingtype.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_shogi_.isettingtype.html#preset" class="tsd-kind-icon">preset</a>
+								<a href="isettingtype.html#preset" class="tsd-kind-icon">preset</a>
 							</li>
 						</ul>
 					</li>
@@ -188,19 +175,18 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>

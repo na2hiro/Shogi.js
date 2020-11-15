@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for shogi.js">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,12 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
-			<h1>shogi.js</h1>
+			<h1>Project shogi.js</h1>
 		</div>
 	</div>
 </header>
@@ -101,39 +95,22 @@
 					</li>
 				</ul>
 				<p>通常モードは棋譜再生および対局を，編集モードは盤面編集をモデル化するものである．</p>
-				<a href="#クラス概要" id="クラス概要" style="color: inherit; text-decoration: none;">
-					<h2>クラス概要</h2>
+				<a href="#docs" id="docs" style="color: inherit; text-decoration: none;">
+					<h2>Docs</h2>
 				</a>
-				<p>各クラスのメソッドの概要についてはコメントを確認されたい．
+				<p><a href="http://apps.81.la/Shogi.js/docs/modules.html">TypeDoc ドキュメンテーション</a> を参照のこと。
 				また，<code>test</code>ディレクトリ以下のテストで実際の挙動を確認されたい．</p>
-				<ul>
-					<li>class Shogi<ul>
-							<li>将棋盤を管理するクラス</li>
-						</ul>
-					</li>
-					<li>enum Color<ul>
-							<li>Black=0, White=1</li>
-						</ul>
-					</li>
-					<li>class Piece<ul>
-							<li>駒を表すクラス</li>
-						</ul>
-					</li>
-				</ul>
 				<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
 					<h2>TODO</h2>
 				</a>
-				<ul>
-					<li>駒箱</li>
-				</ul>
+				<p><a href="https://github.com/na2hiro/Shogi.js/issues">https://github.com/na2hiro/Shogi.js/issues</a></p>
 				<a href="#開発" id="開発" style="color: inherit; text-decoration: none;">
 					<h2>開発</h2>
 				</a>
 				<a href="#準備" id="準備" style="color: inherit; text-decoration: none;">
 					<h3>準備</h3>
 				</a>
-				<pre><code>$ npm <span class="hljs-keyword">install</span>
-</code></pre>
+				<pre><code>$ npm <span class="hljs-keyword">install</span></code></pre>
 				<p>上記コマンドを実行することで開発に必要なパッケージをインストールできます．</p>
 				<ul>
 					<li>TypeScript 2.0</li>
@@ -167,31 +144,31 @@ $ npm <span class="hljs-keyword">run</span><span class="bash"> build:watch</span
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_color_.html">&quot;<wbr>Color&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_constants_.html">&quot;<wbr>Constants&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_imovedefinition_.html">&quot;IMove<wbr>Definition&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_piece_.html">&quot;<wbr>Piece&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_serialization_.html">&quot;<wbr>Serialization&quot;</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_shogi_.html">&quot;shogi&quot;</a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="enums/color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/piece.html" class="tsd-kind-icon">Piece</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/shogi.html" class="tsd-kind-icon">Shogi</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/imove.html" class="tsd-kind-icon">IMove</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/imovedefinition.html" class="tsd-kind-icon">IMove<wbr>Definition</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/isettingtype.html" class="tsd-kind-icon">ISetting<wbr>Type</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -202,18 +179,18 @@ $ npm <span class="hljs-keyword">run</span><span class="bash"> build:watch</span
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
-				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
-				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
 			</ul>
 		</div>
 	</div>
