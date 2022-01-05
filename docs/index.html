@@ -59,13 +59,13 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<a href="#shogijs-ver-20-" id="shogijs-ver-20-" style="color: inherit; text-decoration: none;">
-					<h1>Shogi.js (Ver. 2.0) <a href="https://travis-ci.org/na2hiro/Shogi.js"><img src="https://travis-ci.org/na2hiro/Shogi.js.svg?branch=master" alt="Build Status"></a></h1>
+					<h1>Shogi.js (Ver. 2.0) <a href="https://app.travis-ci.com/na2hiro/Shogi.js"><img src="https://app.travis-ci.com/na2hiro/Shogi.js.svg?branch=master" alt="Build Status"></a></h1>
 				</a>
 				<p>将棋の盤駒をモデルとするシンプルなJavaScriptライブラリ．TypeScript．</p>
 				<a href="#インストール" id="インストール" style="color: inherit; text-decoration: none;">
 					<h2>インストール</h2>
 				</a>
-				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span><span style="color: #000000"> </span><span style="color: #001080">shogi</span><span style="color: #000000">.</span><span style="color: #001080">js</span>
+				<pre><code class="language-shell"><span style="color: #000000">npm install shogi.js</span>
 </code></pre>
 				<a href="#概要" id="概要" style="color: inherit; text-decoration: none;">
 					<h2>概要</h2>
@@ -111,36 +111,35 @@
 				<a href="#準備" id="準備" style="color: inherit; text-decoration: none;">
 					<h3>準備</h3>
 				</a>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ nvm i &amp;&amp; nvm use &amp;&amp; npm install</span>
 </code></pre>
 				<p>上記コマンドを実行することで開発に必要なパッケージをインストールできます．</p>
 				<ul>
-					<li>TypeScript 2.0</li>
-					<li>Webpack 3 (バンドルツール)</li>
-					<li>Browserify (JSバンドルツール)</li>
+					<li>TypeScript</li>
+					<li>Webpack (バンドルツール)</li>
 					<li>Jest (テストフレームワーク，カバレッジ計測)</li>
 					<li>TSLint (Linter)</li>
 				</ul>
 				<a href="#コマンド" id="コマンド" style="color: inherit; text-decoration: none;">
 					<h3>コマンド</h3>
 				</a>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">build</span>
-<span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> build:</span><span style="color: #001080">watch</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run build</span>
+<span style="color: #000000">$ npm run build:watch</span>
 </code></pre>
 				<p>ビルドが走ります．<code>build:watch</code>の場合，変更されるたびにビルドが走ります．</p>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> test:</span><span style="color: #001080">watch</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run test:watch</span>
 </code></pre>
 				<p>コンソールでテスト結果が表示されます．コードの変更が保存されるたびに必要なテストが再実行されるため，実装が既存の有効なテストを壊してないか簡単に確認できます．</p>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">test</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run </span><span style="color: #795E26">test</span>
 </code></pre>
 				<p>全てのテストが走るとともにカバレッジレポートが表示されます．<code>coverage/lcov-report/index.html</code>では，行ごとのカバレッジを確認できます．追加されたコードのブランチカバレッジが100%になるようにしてください．push時にチェックされ満たしていなければ却下されるはずです．</p>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">lint</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run lint</span>
 </code></pre>
 				<p>コードの品質が検査されます．エラーがあればそれに従い直してください．push前にもチェックされます．</p>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> lint:</span><span style="color: #001080">fix</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run lint:fix</span>
 </code></pre>
 				<p>自動的に修正可能な問題(インデント等)を直してくれます．</p>
-				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">run</span><span style="color: #000000"> </span><span style="color: #001080">docs</span>
+				<pre><code class="language-shell"><span style="color: #000000">$ npm run docs</span>
 </code></pre>
 				<p><code>docs/</code> 以下にドキュメントを生成します．</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
