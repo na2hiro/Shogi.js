@@ -1,3 +1,7 @@
+# (Moved) `shogi.js`はmonorepoへ移行しました
+
+https://github.com/na2hiro/Kifu-for-JS/tree/master/packages/shogi.js
+
 # Shogi.js (Ver. 2.0) ![Build Status](https://github.com/na2hiro/Shogi.js/actions/workflows/main.yml/badge.svg)
 将棋の盤駒をモデルとするシンプルなJavaScriptライブラリ．TypeScript．
 
